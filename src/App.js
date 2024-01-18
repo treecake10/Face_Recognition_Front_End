@@ -3,6 +3,7 @@ import ParticlesBg from 'particles-bg'
 import Navigation from './Components/Navigation/Navigation';
 import ImageLinkForm from './Components/ImageLinkForm/ImageLinkForm';
 import Rank from './Components/Rank/Rank';
+import Logo from './Components/Logo/Logo';
 import FaceRecognition from './Components/FaceRecognition/FaceRecognition';
 import SignIn from './Components/Signin/Signin';
 import Register from './Components/Register/Register';
@@ -126,6 +127,7 @@ class App extends Component {
           <Navigation signed_In={signed_In} onRouteChange={this.onRouteChange}/>
           { route === 'home' 
             ? <div>
+                <Logo />
                 <Rank
                   name={this.state.user.name}
                   entries={this.state.user.entries}
