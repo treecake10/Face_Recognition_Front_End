@@ -20,16 +20,16 @@ https://github.com/treecake10/Face_Recognition_Front_End/assets/25542109/69cca4a
 
 ### Front End Stack
 
-React.js
-HTML5
+React.js,
+HTML5,
 CSS3
 
 ### Back End Stack
 
-Node.js
-Express.js
+Node.js,
+Express.js,
 Knex.js
 
-PostgreSQL
+PostgreSQL,
 Clarifai API
 
