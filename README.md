@@ -8,7 +8,7 @@ Find any image of a human face on the web, copy & paste the image url link into 
 
 ## Step 3 
 
-Using the Clarifai API's face detection model, Machine learning is applied to trace a bounding box around the face of a human in the image.
+Using the Clarifai API's face detection model, Machine learning is applied to trace a bounding box around the face of any human or animal.
 
 ## Finally
 
