@@ -1,3 +1,20 @@
+# Front End Stack
+
+React.js,
+HTML5,
+CSS3
+
+# Back End Stack
+
+Node.js,
+Express.js,
+Knex.js
+
+PostgreSQL,
+Clarifai API
+
+<br />
+
 ## Step 1
 
 Signin/Register through a PostgreSQL database.
@@ -19,21 +36,4 @@ This application keeps track of the number of image entries submitted by the use
 # Demo
 
 https://github.com/treecake10/Face_Recognition_Front_End/assets/25542109/69cca4aa-1b2f-4778-aa30-083226ea6f18
-
-<br />
-
-### Front End Stack
-
-React.js,
-HTML5,
-CSS3
-
-### Back End Stack
-
-Node.js,
-Express.js,
-Knex.js
-
-PostgreSQL,
-Clarifai API
 
