@@ -1,3 +1,9 @@
+# Demo
+
+https://github.com/treecake10/Face_Recognition_Front_End/assets/25542109/69cca4aa-1b2f-4778-aa30-083226ea6f18
+
+<br />
+
 # Front End Stack
 
 React.js,
@@ -30,10 +36,4 @@ Using the Clarifai API's face detection model, Machine learning is applied to tr
 ## Finally
 
 This application keeps track of the number of image entries submitted by the user, which can be stored and retrieved. 
-
-<br />
-
-# Demo
-
-https://github.com/treecake10/Face_Recognition_Front_End/assets/25542109/69cca4aa-1b2f-4778-aa30-083226ea6f18
 
