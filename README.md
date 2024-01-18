@@ -16,7 +16,7 @@ This application keeps track of the number of image entries submitted by the use
 
 <br />
 
-### Demo
+# Demo
 
 https://github.com/treecake10/Face_Recognition_Front_End/assets/25542109/69cca4aa-1b2f-4778-aa30-083226ea6f18
 
