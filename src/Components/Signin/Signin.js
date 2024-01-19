@@ -43,30 +43,25 @@ class SignIn extends React.Component {
 // 	 }
 //   }
 
-	onSubmitSignIn = () => {
+onSubmitSignIn = () => {
+    fetch('https://smart-brain-node-express-app.onrender.com/signin', {
+      method: 'post',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        email: this.state.signInEmail,
+        password: this.state.signInPassword
+      })
+    })
+      .then(response => response.json())
+      .then(user => {
+        if (user.id) {
+          this.props.loadUser(user)
+          this.props.onRouteChange('home');
+        }
+      })
+  }
 
-		try {
-
-		const response = fetch('https://smart-brain-node-express-app.onrender.com/signin', {
-			method: 'post',
-			headers: { 'Content-Type': 'application/json' },
-			body: JSON.stringify({
-			email: this.state.signInEmail,
-			password: this.state.signInPassword
-			})
-		});
-
-		const user = response.json();
-
-		if (user.id) {
-			this.props.loadUser(user);
-			this.props.onRouteChange('home');
-		}
-
-		} catch (error) {
-		console.error('Error during sign in:', error);
-		}
-	}
+	
 
   render() {
   	const { onRouteChange } = this.props;
