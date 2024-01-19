@@ -18,30 +18,55 @@ class SignIn extends React.Component {
   	this.setState({signInPassword: event.target.value})
   }
 
-  onSubmitSignIn = async () => {
+//   onSubmitSignIn = async () => {
 
-     try {
+//      try {
 
-        const response = await fetch('https://smart-brain-node-express-app.onrender.com/signin', {
-		  method: 'post',
-		  headers: { 'Content-Type': 'application/json' },
-		  body: JSON.stringify({
-		    email: this.state.signInEmail,
-		    password: this.state.signInPassword
-		  })
+//         const response = await fetch('https://smart-brain-node-express-app.onrender.com/signin', {
+// 		  method: 'post',
+// 		  headers: { 'Content-Type': 'application/json' },
+// 		  body: JSON.stringify({
+// 		    email: this.state.signInEmail,
+// 		    password: this.state.signInPassword
+// 		  })
+// 		});
+
+// 		const user = await response.json();
+
+// 		if (user.id) {
+// 		  await this.props.loadUser(user);
+// 		  this.props.onRouteChange('home');
+// 		}
+
+//      } catch (error) {
+// 	    console.error('Error during sign in:', error);
+// 	 }
+//   }
+
+	onSubmitSignIn = () => {
+
+		try {
+
+		const response = fetch('https://smart-brain-node-express-app.onrender.com/signin', {
+			method: 'post',
+			headers: { 'Content-Type': 'application/json' },
+			body: JSON.stringify({
+			email: this.state.signInEmail,
+			password: this.state.signInPassword
+			})
 		});
 
-		const user = await response.json();
+		const user = response.json();
 
 		if (user.id) {
-		  await this.props.loadUser(user);
-		  this.props.onRouteChange('home');
+			this.props.loadUser(user);
+			this.props.onRouteChange('home');
 		}
 
-     } catch (error) {
-	    console.error('Error during sign in:', error);
-	 }
-  }
+		} catch (error) {
+		console.error('Error during sign in:', error);
+		}
+	}
 
   render() {
   	const { onRouteChange } = this.props;
